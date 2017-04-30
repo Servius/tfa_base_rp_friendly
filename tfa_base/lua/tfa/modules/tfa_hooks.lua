@@ -107,7 +107,7 @@ local function GetInspectionKey()
 	return keyv
 end
 
-local function TFAContextBlock()
+--[[local function TFAContextBlock()
 	local plyv = LocalPlayer()
 	if not IsValid(plyv) then return end
 	if GetViewEntity() ~= plyv then return end
@@ -119,7 +119,7 @@ local function TFAContextBlock()
 end
 
 hook.Add("ContextMenuOpen", "TFAContextBlock", TFAContextBlock)
-
+--]]
 if CLIENT then
 	local kd_old = false
 	function TFAKPThink()
